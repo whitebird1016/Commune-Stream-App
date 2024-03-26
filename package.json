@@ -1,0 +1,68 @@
+{
+  "name": "commune_live_app",
+  "version": "0.3.30",
+  "private": true,
+  "homepage": "",
+  "dependencies": {
+    "@devexpress/dx-react-core": "^4.0.5",
+    "@devexpress/dx-react-scheduler": "^4.0.5",
+    "@devexpress/dx-react-scheduler-material-ui": "^4.0.5",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@mui/material": "^5.13.6",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@videosdk.live/react-sdk": "^0.1.73",
+    "@videosdk.live/videosdk-media-processor-web": "^0.0.12",
+    "compressorjs": "^1.1.1",
+    "dayjs": "^1.11.9",
+    "emoji-mart": "^3.0.1",
+    "fabric": "^4.6.0",
+    "hls.js": "^1.1.5",
+    "i18next": "^22.4.10",
+    "jackal.js": "^2.0.3",
+    "notistack": "^1.0.10",
+    "react": "^17.0.2",
+    "react-color": "^2.19.3",
+    "react-device-detect": "^1.17.0",
+    "react-dom": "^17.0.2",
+    "react-emoji-render": "^1.2.4",
+    "react-file-viewer": "^1.2.1",
+    "react-i18next": "^12.1.5",
+    "react-icons": "^4.10.1",
+    "react-lines-ellipsis": "^0.15.0",
+    "react-linkify": "0.2.2",
+    "react-lottie": "^1.2.3",
+    "react-motion": "^0.5.2",
+    "react-player": "^2.9.0",
+    "react-responsive": "^9.0.0-beta.4",
+    "react-router-dom": "^6.14.0",
+    "react-scripts": "4.0.3",
+    "react-use-clipboard": "^1.0.7",
+    "react-virtualized": "^9.22.3",
+    "react-visibility-sensor": "^5.1.1",
+    "styled-components": "^6.0.1",
+    "uuid": "^8.3.2",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
+}

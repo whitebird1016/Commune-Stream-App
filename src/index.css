@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  /* background-color: #212032; */
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: "transparent";
+  /* #212032; */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1178f880;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1178f8;
+}
+
+.video-cover video {
+  object-fit: cover;
+}
+
+.video-contain video {
+  object-fit: contain;
+}
+
+/* .MuiTooltip-tooltip {
+  background-color: aliceblue;
+  color: black;
+} */
+
+.MuiSlider-valueLabel {
+  color: transparent;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  margin-top: 14px;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator{
+  display: none;
+  filter:invert(97%) sepia(100%) saturate(0%) hue-rotate(129deg) brightness(110%) contrast(102%);
+  }
+
+input[type="time"]:focus-visible{
+    outline: none;
+  }
+
+  @keyframes react-loading-skeleton {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.loading-skeleton-anime-dark {
+  --base-color: #1A1C22;
+  --highlight-color: #232830;
+}
+
+.loading-skeleton-anime-light {
+  --base-color: #EEF0F2;
+  --highlight-color: #D3D7DA;
+}
+
+.loading-skeleton-anime-default{
+  --base-color: #333244;
+  --highlight-color: #414053;
+}
+
+.loading-skeleton-anime {
+    --animation-duration: 1.5s;
+    --animation-direction: normal;
+    --pseudo-element-display: block; /* Enable animation */
+
+    background-color: var(--base-color);
+
+    width: 100%;
+    border-radius: 0.25rem;
+    display: inline-flex;
+    line-height: 1;
+
+    position: relative;
+    overflow: hidden;
+    z-index: 1; /* Necessary for overflow: hidden to work correctly in Safari */
+}
+
+.loading-skeleton-anime::after {
+    content: ' ';
+    display: var(--pseudo-element-display);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        90deg,
+        var(--base-color),
+        var(--highlight-color),
+        var(--base-color)
+    );
+    transform: translateX(-100%);
+
+    animation-name: react-loading-skeleton;
+    animation-direction: var(--animation-direction);
+    animation-duration: var(--animation-duration);
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+} 
+
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
+
+.animation {
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center;
+  animation: lights 5s 750ms linear infinite;
+  text-transform: uppercase;
+  @media screen and (max-width: 600px) {
+   font-size: 40px;
+  }
+}
+.blur-border {
+  border-radius: 200px;
+  box-shadow: 0 0 10px 10px rgba(85, 84, 84, 0.2) ;
+  max-width:400px;
+  width:100% ;
+  height:auto;
+  margin-top: 100px;
+  @media screen and (max-width: 600px) {
+    margin-top: 200px;
+  }
+}
+.MuiDialog-paper	{
+  background-color: #212032 !important;
+}
+
+.MuiDialogContentText-root	{
+  color: rgb(255, 255, 255,0.5) !important;
+}
+
+/* .Appointment-clickableAppointment{
+  background-color: #2890e3 !important;
+
+}
+.Appointment-shadedAppointment{
+  background-color: #90caf9 !important;
+} */
