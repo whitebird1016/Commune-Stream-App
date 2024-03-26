@@ -67,7 +67,7 @@ const MainContainer = ({ mode, meetingID, recordingFlg }) => {
       region: "sg001",
       preferredProtocol: "UDP_ONLY",
       canChangeLayout: "true",
-      redirectOnLeave: "https://commune-meeting.vercel.app",
+      redirectOnLeave: "https://commune-meeting-nine.vercel.app/",
       chatEnabled: "true",
       theme: "DEFAULT",
       screenShareEnabled: "true",
