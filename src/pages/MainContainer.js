@@ -29,7 +29,7 @@ import animationData from "../animations/meeting-left.json";
 import lightThemeAnimationData from "../animations/meeting_left_white.json";
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-
+import Commune from "../assets/commune.gif"
 const MainContainer = ({ mode, meetingID, recordingFlg }) => {
   const [meetingIdValidation, setMeetingIdValidation] = useState({
     isLoading: true,
@@ -85,7 +85,7 @@ const MainContainer = ({ mode, meetingID, recordingFlg }) => {
       participantCanToggleRecording:
         recordingFlg && recordingFlg === 1 ? "true" : "false",
       brandingEnabled: "true",
-      brandLogoURL: "https://www.communeai.org/_next/image?url=%2Fgif%2Flogo%2Fcommune.webp&w=640&q=75",
+      brandLogoURL: Commune,
       brandName: "commune",
       participantCanLeave: "true",
       poweredBy: "false",

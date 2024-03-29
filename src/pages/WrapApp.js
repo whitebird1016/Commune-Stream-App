@@ -1,6 +1,7 @@
 import { Box, Button } from "@material-ui/core";
 import { useRef, useState } from "react";
 import MainContainer from "./MainContainer";
+import Commune from "../assets/commune.gif"
 
 const WrapApp = () => {
   const [mode, setMode] = useState("CONFERENCE");
@@ -49,7 +50,7 @@ const WrapApp = () => {
       }}
     >
 
-      <img src="https://www.communeai.org/_next/image?url=%2Fgif%2Flogo%2Fcommune.webp&w=640&q=75" className="blur-border" />
+      <img src={Commune} className="blur-border" />
       <h2 className="animation">Commune Video Conference App</h2>
       {mode && !meetingID ? (
         mode === "VIEWER" || (mode === "CONFERENCE" && recordingFlg) ? (
